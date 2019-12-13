@@ -1,0 +1,67 @@
+
+body,html{
+    font-family: 'Prompt', sans-serif;
+background-color: rgb(234,234,234);
+}
+
+header {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+header>nav>ul>li, footer>nav>ul>a>li {
+display:inline;
+margin:0 25px;
+}
+
+header>nav>ul>li>a, footer>nav>ul>a>li {
+    text-decoration: none;
+    color:black;
+}
+
+
+header>nav>ul>li>a:hover, footer>nav>ul>li>a:hover {
+    text-decoration: underline;
+    color:blue;
+}
+
+#portfolio-grid {
+    width:900px;
+    /* border:1px solid black; */
+    margin: 0 auto;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.port-item {
+    width:290px;
+    height:250px;
+    background-color:rgb(100,100,100);
+    margin:5px;
+}
+
+#social-icons {
+    width:400px;
+    margin:0 auto;
+}
+
+
+.insta::before {
+    font-family:"FontAwesome"; 
+    font-weight: 900;
+    content:"\f16d ";
+    font-size:24px;
+}
+
+.bc::before {
+    font-family:"FontAwesome"; 
+    font-weight: 900;
+    content:url(../img/bc.png);
+}
+.spot::before {
+    font-family:"FontAwesome"; 
+    font-weight: 900;
+    content:"\f1bc ";
+    font-size:24px;
+}

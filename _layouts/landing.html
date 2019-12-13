@@ -1,0 +1,11 @@
+---
+layout:default
+---
+
+<section id="portfolio-grid">
+    {% for post in site.posts %}
+    <div class="port-item">
+        <img src="{{site.baseurl}}/assets/img/{{page.img}}" alt="">
+    </div>
+    {% endfor %}
+</section>
